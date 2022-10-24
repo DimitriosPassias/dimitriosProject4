@@ -1,4 +1,7 @@
-#Dimitrios Passias: Import a file with the name "nationsPop.txt" in order for it be read and graphed and in the format of countryName,countryPopulation,CountryPercentage
+#Developer: Dimitrios Passias
+#Issues: None
+#Instructions: Import a file with the name "nationsPop.txt" in order for it be read and graphed and in the format of countryName,countryPopulation,CountryPercentage
+
 import arcade
 axisX = 100
 axisY = 100
