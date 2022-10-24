@@ -34,12 +34,13 @@ for i in range(100, 1500, 100):
 
 #X axis drawing
 for lines in myFile:
-
+    #Splits values by the ","
     lineValue = lines.strip().split(",")
     xvalue = (90 * currentCountry) + 10
     currentCountryName = lineValue[0]
     bar_height = ((int(lineValue[1])-100_000_000)/1_950_000)
 
+    #Draws the countries at the start of the bar
     country = arcade.Text(currentCountryName, xvalue, 25, arcade.color.BLACK)
     country.draw()
 
@@ -51,5 +52,6 @@ for lines in myFile:
 
     currentCountry += 1
 
+#Finishes render and runs the program
 arcade.finish_render()
 arcade.run()
